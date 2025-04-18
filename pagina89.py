@@ -46,6 +46,18 @@ Se,ad esempio, il dato in ingresso è  23456, il programma deve visualizzare 2 e
 usate % e log(x,10)--------
 """
 
+#1-------------------------------------------------------
+
+#utente=str(input("inserisci un numero: "))
+#print(utente[0],utente[-1])
+
+#2----------------------------------------------
+
+utente=int(input("inserisci un numero: "))
+x=utente
+while x>10:
+    x=x//10
+print(x,utente%10)
 
 
 
