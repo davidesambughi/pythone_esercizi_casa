@@ -2,7 +2,6 @@
 pagina 90 R2.20
 
 LO PSEUDOCIDICESEGUENTE DESCRIVE COME SCAMBIARE DUE LETTERE IN UNA PAROLA.
-
 DATI: LA STRINGA mystring E DUE LETTERE "e" E "a"
 TRASFORMA NEL CARATTERE * TUTTE LE OCCORENZE DELLA LETTERA "e"
 TRASFORMA NEL CARATTERE "e" TUTTE LE OCCORENZE DELLA LETTERA "a"
@@ -44,7 +43,6 @@ print(contatore2)
 CHAT GPT ------  UTILIZZA  REPLACE !!!
 
 stringa = "marmalade"
-
 # Step 1: sostituisci tutte le "e" con "*"
 stringa = stringa.replace("e", "*")
 
@@ -55,11 +53,11 @@ stringa = stringa.replace("a", "e")
 stringa = stringa.replace("*", "a")
 
 print(stringa)
-
 """
 
+
 """
-P2.4
+P2.4------------------------------------------------------------------------
 SCRIVETE UN PROGRAMMA CHE CHIEDA ALL'UTENTE DUE NUMERI INTERI , E POI VISUALIZZI:
 -SOMMA
 -DIFFERENZA
@@ -110,12 +108,18 @@ try:
 
     ris_min=min(v1,v2)
 
-    print(f"la somma dei due valori e' {ris_somma}, la differrenza e'{ris_differenza}, il prodotto e' {ris_prodotto}, la media e' {ris_media}, la distanza e' {ris_distanza}, il pi' grande e' {ris_max}, il piu piccolo e' {ris_min}" )
+    print(f"{'SOMMA:':<15}{ris_somma:>8}")             #chatgpt x questa parte
+    print(f"{'DIFFERENZA:':<15}{ris_differenza:>8}")
+    print(f"{'PRODOTTO:':<15}{ris_prodotto:>8}")
+    print(f"{'MEDIA:':<15}{ris_media:>8.2f}")
+    print(f"{'DISTANZA:':<15}{ris_distanza:>8}")
+    print(f"{'VALORE MASSIMO:':<15}{ris_max:>8}")
+    print(f"{'VALORE MINIMO:':<15}{ris_min:>8}")
 except ValueError:
     print("Errore: devi inserire due numeri interi, riprova.")
 
 
- """
+"""
  VERSIONE COMPATTA
 
  v1 = int(input("Inserisci il primo valore: "))
@@ -134,13 +138,15 @@ Minimo: {min(v1, v2)}
  """
 
 """
+
 P2.5-----------------
 MIGLIORATE L'IMPAGINAZIONE DEI RISULTATI PRODOTTI DALL'ESERCIZIO PRECEDENTE, IN MODO CHE I NUMERI
 SIANO INCOLONNATI CORRETTAMENTE:
-SUM:           45
-DIFFERENCE:    -5
-PRODUCT:      500  
+SUM:         45
+DIFFERENCE:  -5
+PRODUCT:    500  
 ETC
+
 """
 
 
